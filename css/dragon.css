@@ -1,0 +1,415 @@
+.art-card--dragon {
+    background-color: #ffd65a;
+}
+
+.dragon-stage {
+    width: 100%;
+    min-height: 380px;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    background-color: #ffd65a;
+}
+
+.dragon-container {
+    position: relative;
+
+    width: 31.25em;
+    height: 25em;
+
+    font-size: 0.75em;
+    isolation: isolate;
+}
+
+.art-card--dragon .face {
+    position: absolute;
+    top: 3.12em;
+    right: 0;
+    left: 0;
+
+    width: 5.31em;
+    height: 6.87em;
+    margin: auto;
+
+    background-color: #c42754;
+    border-radius: 5.31em 5.31em 0 0;
+}
+
+.art-card--dragon .face::before {
+    content: "";
+    position: absolute;
+    top: 5.62em;
+    z-index: -1;
+
+    width: 100%;
+    height: 3.12em;
+
+    background-color: #8c1436;
+    border-radius: 5em;
+}
+
+.art-card--dragon .face::after {
+    content: "";
+    position: absolute;
+    top: 3.43em;
+    left: -0.62em;
+
+    width: 6.56em;
+    height: 4.68em;
+
+    background-color: #ee3466;
+    border-radius: 4em;
+}
+
+.art-card--dragon .face > .eye {
+    position: absolute;
+    top: 1.87em;
+    left: 1.12em;
+    z-index: 2;
+
+    width: 0.62em;
+    height: 0.62em;
+
+    background-color: #262626;
+    border-radius: 50%;
+    box-shadow: 2.5em 0 #262626;
+}
+
+.art-card--dragon .nostril,
+.art-card--dragon .nostril::after {
+    position: absolute;
+    z-index: 3;
+
+    width: 1em;
+    height: 1em;
+
+    background-color: #8c1436;
+    border: 0.62em solid #ee3466;
+    border-radius: 50%;
+}
+
+.art-card--dragon .nostril {
+    top: 2.81em;
+    left: -0.93em;
+}
+
+.art-card--dragon .nostril::after {
+    content: "";
+    top: -0.62em;
+    left: 4.25em;
+}
+
+.art-card--dragon .ear,
+.art-card--dragon .ear::before {
+    position: absolute;
+
+    width: 0.68em;
+    height: 3.12em;
+
+    background-color: #8c1436;
+    border: 0.56em solid #c42754;
+    border-radius: 1.37em;
+}
+
+.art-card--dragon .ear {
+    top: -1.87em;
+    left: -0.93em;
+    z-index: -1;
+
+    transform: rotate(-40deg);
+}
+
+.art-card--dragon .ear::before {
+    content: "";
+    top: 3em;
+    left: 3.75em;
+
+    transform: rotate(80deg);
+}
+
+.art-card--dragon .horn {
+    position: absolute;
+    top: -2.81em;
+    z-index: -1;
+
+    width: 1.25em;
+    height: 4.25em;
+
+    background-color: #fca01b;
+    border-radius: 1.25em;
+}
+
+.art-card--dragon .horn-l {
+    left: 0.62em;
+}
+
+.art-card--dragon .horn-r {
+    left: 3.43em;
+}
+
+.art-card--dragon .horn-l::before,
+.art-card--dragon .horn-r::before {
+    content: "";
+    position: absolute;
+    top: 0.62em;
+    right: 0;
+    left: 0;
+
+    width: 70%;
+    height: 0.25em;
+    margin: auto;
+
+    background-color: #e76a12;
+    border-radius: 0.2em;
+
+    box-shadow:
+        0 0.5em #e76a12,
+        0 1em #e76a12,
+        0 1.5em #e76a12,
+        0 2em #e76a12,
+        0 2.5em #e76a12;
+}
+
+.art-card--dragon .body {
+    position: absolute;
+    top: 11.81em;
+    right: 0;
+    left: 0;
+    z-index: -2;
+
+    width: 2.93em;
+    height: 5.62em;
+    margin: auto;
+
+    background-color: #c42754;
+}
+
+.art-card--dragon .stomach {
+    position: relative;
+    top: 3.12em;
+    right: 3em;
+
+    width: 8.75em;
+    height: 8.75em;
+
+    background-color: #c42754;
+    border-radius: 50%;
+}
+
+.art-card--dragon .stomach::before {
+    content: "";
+    position: absolute;
+    top: 4.37em;
+    left: 2.5em;
+
+    width: 3.75em;
+    height: 3.75em;
+
+    background-color: #ee3466;
+    border-radius: 50%;
+}
+
+.art-card--dragon .body::after {
+    content: "";
+    position: absolute;
+    top: 0.62em;
+    right: 0;
+    left: 0;
+
+    width: 70%;
+    height: 0.5em;
+    margin: auto;
+
+    background-color: #8c1436;
+    border-radius: 0.5em;
+
+    box-shadow:
+        0 0.9em #8c1436,
+        0 1.8em #8c1436,
+        0 2.7em #8c1436,
+        0 3.6em #8c1436,
+        0 4.5em #8c1436,
+        0 5.4em #8c1436;
+}
+
+.art-card--dragon .wing {
+    position: absolute;
+    top: 12.5em;
+    z-index: -3;
+
+    width: 15em;
+    height: 7.5em;
+
+    background-color: #0e3441;
+    border-radius: 12.5em 12.5em 0 0;
+}
+
+.art-card--dragon .wing-l {
+    left: 1.25em;
+    transform: rotate(25deg);
+    animation: dragon-wing-left 2s infinite;
+}
+
+.art-card--dragon .wing-r {
+    left: 15em;
+    transform: rotateY(-188deg) rotate(25deg);
+    animation: dragon-wing-right 2s infinite;
+}
+
+@keyframes dragon-wing-left {
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes dragon-wing-right {
+    50% {
+        transform: rotateY(-180deg) rotate(15deg);
+    }
+}
+
+.art-card--dragon .wing-l::before,
+.art-card--dragon .wing-r::before,
+.art-card--dragon .wing-l::after,
+.art-card--dragon .wing-r::after {
+    content: "";
+    position: absolute;
+    bottom: -0.1em;
+
+    width: 4.37em;
+    height: 2.18em;
+
+    background-color: #ffd65a;
+    border-radius: 4.37em 4.37em 0 0;
+}
+
+.art-card--dragon .wing-l::before,
+.art-card--dragon .wing-r::before {
+    left: 0;
+}
+
+.art-card--dragon .wing-l::after,
+.art-card--dragon .wing-r::after {
+    left: 4.37em;
+}
+
+.art-card--dragon .arm {
+    position: absolute;
+    top: 14.37em;
+    z-index: -3;
+
+    width: 2.92em;
+    height: 5.62em;
+
+    background-color: #8c1436;
+    border-radius: 3.12em;
+}
+
+.art-card--dragon .arm-l {
+    left: 9.06em;
+    transform: rotate(45deg);
+}
+
+.art-card--dragon .arm-r {
+    left: 19.06em;
+    transform: rotate(-45deg);
+}
+
+.art-card--dragon .forearm {
+    position: absolute;
+    top: 17.5em;
+
+    width: 6.25em;
+    height: 2.81em;
+
+    background-color: #ee3466;
+    border-radius: 5.62em;
+}
+
+.art-card--dragon .forearm-l {
+    left: 7.37em;
+}
+
+.art-card--dragon .forearm-r {
+    left: 17.5em;
+    transform: rotate(180deg);
+}
+
+.art-card--dragon .forearm-l::before,
+.art-card--dragon .forearm-r::before {
+    content: "";
+    position: absolute;
+    top: 0.43em;
+    left: 5.43em;
+
+    width: 1.06em;
+    height: 0.43em;
+
+    background-color: #fca01b;
+    border-radius: 0.31em;
+
+    box-shadow:
+        0 0.75em #fca01b,
+        0 1.5em #fca01b;
+}
+
+.art-card--dragon .leg {
+    position: absolute;
+    top: 18.12em;
+    z-index: -3;
+
+    width: 5.62em;
+    height: 5.62em;
+
+    background-color: #8c1436;
+    border-radius: 3.12em;
+}
+
+.art-card--dragon .leg::before {
+    content: none;
+}
+
+.art-card--dragon .leg-l {
+    left: 8.12em;
+}
+
+.art-card--dragon .leg-r {
+    left: 16.87em;
+    transform: rotateY(180deg);
+}
+
+.art-card--dragon .leg-l::after,
+.art-card--dragon .leg-r::after {
+    content: "";
+    position: absolute;
+    top: 2.81em;
+    right: 2.5em;
+
+    width: 5.62em;
+    height: 2.81em;
+
+    background-color: #ee3466;
+    border-radius: 5.62em 5.62em 0 0;
+}
+
+.art-card--dragon .shadow {
+    position: absolute;
+    top: 23.7em;
+    right: 0;
+    left: 0;
+
+    width: 21.87em;
+    height: 0.5em;
+    margin: auto;
+
+    background-color: rgba(163, 130, 34, 0.4);
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width: 560px) {
+    .dragon-container {
+        font-size: 0.58em;
+    }
+}
