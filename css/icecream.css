@@ -1,0 +1,231 @@
+.art-card--icecream {
+    background-color: #DCEEFF;
+}
+
+.icecream-stage {
+    width: 100%;
+    min-height: 500px;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    background-color: #DCEEFF;
+}
+
+.icecream-container {
+    position: relative;
+
+    width: 300px;
+    height: 500px;
+
+    transform: scale(0.8);
+    transform-origin: center;
+}
+
+.art-card--icecream .icecream {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+
+    width: 200px;
+    height: 440px;
+
+    transform: translateX(-50%);
+}
+
+.art-card--icecream .icecream .head {
+    width: 100%;
+    height: 310px;
+
+    background-color: #ffb0a6;
+    border-radius: 100px 100px 0 30px;
+}
+
+.art-card--icecream .bite {
+    position: absolute;
+    top: -5px;
+    left: 20%;
+
+    width: 40px;
+    height: 50px;
+
+    background-color: #DCEEFF;
+    border-radius: 50%;
+}
+
+.art-card--icecream .bite:nth-child(2) {
+    top: 20px;
+    left: 20px;
+
+    width: 30px;
+    height: 30px;
+}
+
+.art-card--icecream .stripContainer {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+
+    width: 116px;
+    height: 140px;
+
+    transform: translateX(-50%);
+}
+
+.art-card--icecream .strip {
+    float: left;
+
+    width: 40px;
+    height: 100%;
+
+    background-color: #ff998d;
+    border-radius: 100px;
+}
+
+.art-card--icecream .strip:last-child {
+    float: right;
+}
+
+.art-card--icecream .mltContainer {
+    position: absolute;
+    right: 0;
+    bottom: 26.1%;
+
+    width: 56px;
+    height: 15px;
+
+    background-color: #ffb0a6;
+}
+
+.art-card--icecream .drip {
+    float: left;
+
+    width: 14px;
+    height: 45px;
+
+    background-color: #ffb0a6;
+    border-radius: 0 0 100px 100px;
+}
+
+.art-card--icecream .drip:nth-child(1) {
+    background-color: #DCEEFF;
+    border-radius: 0 100px 0 0;
+}
+
+.art-card--icecream .drip:nth-child(2)::before,
+.art-card--icecream .drip:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: #ffb0a6;
+    border-radius: 50%;
+
+    animation: icecream-drop 3s linear infinite;
+}
+
+.art-card--icecream .drip:nth-child(4)::before {
+    animation-delay: 1.5s;
+}
+
+.art-card--icecream .drip:nth-child(3) {
+    height: 100%;
+    margin-top: 8px;
+
+    background-color: #DCEEFF;
+    border-radius: 100px 100px 0 0;
+}
+
+.art-card--icecream .drip:last-child {
+    float: right;
+    height: 25px;
+}
+
+.art-card--icecream .stick {
+    position: relative;
+    left: 50%;
+    z-index: 1;
+
+    width: 34px;
+    height: 115px;
+
+    transform: translateX(-50%);
+
+    background-color: #fcd6ad;
+    border-radius: 0 0 30px 30px;
+}
+
+.art-card--icecream .stick::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 14px;
+
+    background-color: #efcba4;
+}
+
+.art-card--icecream .icecream-shadow {
+    position: absolute;
+    left: 50%;
+
+    width: 76px;
+    height: 25px;
+    margin-top: -15px;
+
+    transform: translateX(-50%);
+
+    background-color: #e7e7e6;
+    border-radius: 50%;
+}
+
+.art-card--icecream .puddle {
+    position: absolute;
+    left: 76%;
+
+    width: 55px;
+    height: 25px;
+    margin-top: -15px;
+
+    background-color: #ffb0a6;
+    border-radius: 50%;
+
+    animation: icecream-puddle 1.5s linear 2.4s infinite;
+}
+
+@keyframes icecream-drop {
+    0%,
+    65% {
+        top: 10px;
+    }
+
+    100% {
+        top: 105px;
+    }
+}
+
+@keyframes icecream-puddle {
+    0%,
+    30%,
+    60% {
+        left: 76%;
+        width: 55px;
+    }
+
+    40% {
+        left: 75%;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .icecream-container {
+        transform: scale(0.65);
+    }
+}
