@@ -1,0 +1,97 @@
+.art-card--bouncing-ball {
+    background: #94bcdf;
+}
+
+.bouncing-stage {
+    width: 100%;
+    min-height: 380px;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    background: #94bcdf;
+}
+
+.bouncing-canvas {
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+
+    transform: scale(0.72);
+    transform-origin: center;
+}
+
+.ball-container {
+    width: 57px;
+    height: 50px;
+}
+
+.art-card--bouncing-ball .ball {
+    position: relative;
+    top: 100px;
+    left: 220px;
+
+    width: 50px;
+    height: 50px;
+
+    background: #ff1a66;
+    border-radius: 50%;
+
+    animation: bouncing-ball 0.9s infinite;
+}
+
+@keyframes bouncing-ball {
+    10% {
+        width: 50px;
+        height: 50px;
+    }
+
+    30% {
+        width: 40px;
+        height: 50px;
+    }
+
+    50% {
+        width: 57px;
+        height: 30px;
+        transform: translateY(240px);
+    }
+
+    75% {
+        width: 57px;
+        height: 50px;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.art-card--bouncing-ball .shadow {
+    position: relative;
+    top: 310px;
+    left: 212px;
+    z-index: 0;
+
+    width: 65px;
+    height: 10px;
+
+    background: rgba(8, 8, 8, 0.05);
+    border-radius: 50%;
+
+    animation: bouncing-shadow 0.9s infinite;
+}
+
+@keyframes bouncing-shadow {
+    50% {
+        transform: scaleX(0.5);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .bouncing-canvas {
+        transform: scale(0.58);
+    }
+}
